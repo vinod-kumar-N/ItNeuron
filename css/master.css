@@ -32,5 +32,9 @@
 }
 
 .transHeader{
-    background: rgba(129, 128, 128, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-light.transHeader .navbar-brand, .navbar-light.transHeader .navbar-nav .active>.nav-link, .navbar-light.transHeader .navbar-nav .nav-link.active, .navbar-light.transHeader .navbar-nav .nav-link.show, .navbar-light.transHeader .navbar-nav .show>.nav-link, .navbar-light.transHeader .navbar-nav .nav-link{
+    color: #fff;
 }
