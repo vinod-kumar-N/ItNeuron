@@ -38,3 +38,6 @@
 .navbar-light.transHeader .navbar-brand, .navbar-light.transHeader .navbar-nav .active>.nav-link, .navbar-light.transHeader .navbar-nav .nav-link.active, .navbar-light.transHeader .navbar-nav .nav-link.show, .navbar-light.transHeader .navbar-nav .show>.nav-link, .navbar-light.transHeader .navbar-nav .nav-link{
     color: #fff;
 }
+.hireContainer p{
+    margin-bottom: 0.5rem;
+}

@@ -34,4 +34,19 @@ $(document).ready(function(){
           });
         } // End if
       });
+      /*call Fancy Box common */
+      var callFancyBoxFn = function(head,content){
+        $.fancybox.open('<div class="message"><h2>'+head+'</h2><div>'+content+'</div></div>');
+      }
+      $(".appDev").on('click', function() {
+
+        callFancyBoxFn();
+      
+      });
+
+      setTimeout(function(){
+        var head = 'We are Hiring';
+        var content = '<div class="hireContainer"><p>Inbound Process</p><p>Location: Bangalore</p><p>Process: Inbound</p><p>Shift : Rotational</p><p>Working Days: 6 Days</p><p>Fixed Salary + Incentives</p><p>Graduation: Fresher/Graduate/Undergraduate</p><p>Cab Facility Available</p></div>';
+        callFancyBoxFn(head,content);
+       }, 2000);
 })
