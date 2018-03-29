@@ -154,6 +154,41 @@
                     </div>
                 </li>
         </ul>
+        <button type="button" class="btn btn-primary hiringBtn" data-toggle="modal" data-target="#hiringModal">
+            Launch demo modal
+          </button>
+        <!-- Hiring Modal -->
+<div class="modal fade" id="hiringModal" tabindex="-1" role="dialog" aria-labelledby="hiringModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">We are Hiring</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="hireContainer">
+                <p>Location: Bangalore</p>
+                <p>Process: Inbound</p>
+                <p>Shift: Rotational</p>
+                <p>Working Days: 6 Days</p>
+                <p>Fixed Salary + Incentives</p>
+                <p>Graduation: Fresher/Graduate/Undergraduate</p>
+                <p>Cab Facility Available</p>
+                <h5>Candidate Profile</h5>
+                <p>0-2yrs Exp</p>
+                <p>Good communication skills, both oral and written</p>
+                <p>Should have good attitude - should be committed to the work</p>
+                
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button onclick="sendMail()" type="button" class="btn btn-dark">Apply Now</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
     </div>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/imagesloaded.js"></script>
