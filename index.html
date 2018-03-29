@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" type="text/css" href="css/default.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/master.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -72,7 +71,7 @@
     <div class="container" id="Web">
         <h2 class="display-4">Web Services</h2>
         <ul class="grid effect-2" id="grid">
-            <li>
+            <li data-toggle="modal" data-target="#webModal"> 
                 <div class="card">
                     <img class="card-img-top" src="images/websites.jpeg" alt="Website Development">
                     <div class="card-body">
@@ -96,7 +95,8 @@
                     <img class="card-img-top" src="images/ux.jpeg" alt="UX Design">
                     <div class="card-body">
                         <h5 class="card-title">Ux Design</h5>
-                        <p class="card-text">User experience, also known as UX, is made up of many moving parts that allow it to positively impact how users feel when they visit your website. </p>
+                        <p class="card-text">User experience, also known as UX, is made up of many moving parts that allow it to positively impact
+                            how users feel when they visit your website. </p>
                     </div>
                 </div>
             </li>
@@ -131,7 +131,7 @@
         </ul>
     </div>
     <div class="container" id="BPO">
-            <h2 class="display-4">BPO Services</h2>
+        <h2 class="display-4">BPO Services</h2>
         <ul class="grid effect-2" id="grid">
             <li>
                 <div class="card data-fancybox">
@@ -144,57 +144,108 @@
                 </div>
             </li>
             <li>
-                    <div class="card">
-                        <img class="card-img-top" src="images/ts.jpeg" alt="Website Development">
-                        <div class="card-body">
+                <div class="card">
+                    <img class="card-img-top" src="images/ts.jpeg" alt="Website Development">
+                    <div class="card-body">
+
+                        <h5 class="card-title">Tech Support</h5>
+                        <p class="card-text">Need Technical Assistance? We provide your customers the right solutions.</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        
+        </div>
+        <button type="button" class="btn btn-primary hiringBtn" data-toggle="modal" data-target="#hiringModal">
+
+            </button>
+            <!-- Hiring Modal -->
+            <div class="modal fade" id="hiringModal" tabindex="-1" role="dialog" aria-labelledby="hiringModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">We are Hiring</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="hireContainer">
+                                <p>Location: Bangalore</p>
+                                <p>Process: Inbound</p>
+                                <p>Shift: Rotational</p>
+                                <p>Working Days: 6 Days</p>
+                                <p>Fixed Salary + Incentives</p>
+                                <p>Graduation: Fresher/Graduate/Undergraduate</p>
+                                <p>Cab Facility Available</p>
+                                <h5>Candidate Profile</h5>
+                                <p>0-2yrs Exp</p>
+                                <p>Good communication skills, both oral and written</p>
+                                <p>Should have good attitude - should be committed to the work</p>
     
-                            <h5 class="card-title">Tech Support</h5>
-                            <p class="card-text">Need Technical Assistance? We provide your customers the right solutions.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button onclick="sendMail()" type="button" class="btn btn-dark">Apply Now</button>
+                            </div>
                         </div>
                     </div>
-                </li>
-        </ul>
-        <button type="button" class="btn btn-primary hiringBtn" data-toggle="modal" data-target="#hiringModal">
-            Launch demo modal
-          </button>
-        <!-- Hiring Modal -->
-<div class="modal fade" id="hiringModal" tabindex="-1" role="dialog" aria-labelledby="hiringModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">We are Hiring</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            <div class="hireContainer">
-                <p>Location: Bangalore</p>
-                <p>Process: Inbound</p>
-                <p>Shift: Rotational</p>
-                <p>Working Days: 6 Days</p>
-                <p>Fixed Salary + Incentives</p>
-                <p>Graduation: Fresher/Graduate/Undergraduate</p>
-                <p>Cab Facility Available</p>
-                <h5>Candidate Profile</h5>
-                <p>0-2yrs Exp</p>
-                <p>Good communication skills, both oral and written</p>
-                <p>Should have good attitude - should be committed to the work</p>
-                
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button onclick="sendMail()" type="button" class="btn btn-dark">Apply Now</button></div>
-        </div>
-      </div>
+                </div>
+        <!-- Web Modal -->
     </div>
-  </div>
-    </div>
+
+    <div class="modal fade" id="webModal" tabindex="-1" role="dialog" aria-labelledby="webModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">WEB DESIGN & Development</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                                <p class="marginT15">
+                                        <b class="FclrS">We create websites developed with the latest technologies.
+                                            If you're looking for a beautiful, intuitive and functional website, then don't hesitate to
+                                            <a href="mailto:Contact@cygnisys.com">get in touch.</a>
+                                       </b>
+                                       <p>
+                                           <b class="FclrS">Our measures of operation is to take the right requirements and give the right Solutions.
+                                               First we start of with the client in getting the requirements because no one understands your Business better than you do.
+                                               First the gathering of the requirements then starts the Fun part.
+                                           </b>
+                                       </p>
+                                       <p>
+                                           <b class="FclrS">Our Team work hand in hand to deliver the right product to clients.
+                                               First we start off with the Designing Part. Our Experts in the house gets you the world class Designs.
+                                               Once the Designs are clear with Cients then comes the "Lion".
+                                           </b>
+                                       </p>
+                                       <p>
+                                           <b class="FclrS">Once the Designs are done Our developers in the house starts off
+                                                with the optimized way to keep the process short and Deliver you the  product in short-time.
+                                                Mean while you can peep in while the Development is going on so that you can get the progress.
+                                                We develop sites that not only fits your desktop, it also fits all the devices accross.
+                                           </b>
+                                       </p>
+                                       <p>
+                                           <b class="FclrS">Once the product is ready. Please hold on we are not going to give you untill the Testing team certifies it.
+                                               A rigorous testing of all the modules and functionality is done then the product is ready to rock your Business.
+                                           </b>
+                                       </p>
+                            <div class="modal-footer">
+                                    
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button onclick="" type="button" class="btn btn-dark">More Info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/imagesloaded.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/AnimOnScroll.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/master.js"></script>
 </body>
 
