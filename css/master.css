@@ -46,3 +46,12 @@
 .hiringBtn{
     display: none;
 }
+.borderBtm{
+    border-bottom: 1px solid #e9ecef;
+}
+.marginTop1rem{
+    margin-top: 1rem;
+}
+.grid li{
+    cursor: pointer;
+}

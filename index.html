@@ -71,7 +71,7 @@
     <div class="container" id="Web">
         <h2 class="display-4">Web Services</h2>
         <ul class="grid effect-2" id="grid">
-            <li data-toggle="modal" data-target="#webModal"> 
+            <li data-toggle="modal" data-target="#webModal">
                 <div class="card">
                     <img class="card-img-top" src="images/websites.jpeg" alt="Website Development">
                     <div class="card-body">
@@ -81,7 +81,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li data-toggle="modal" data-target="#appModal">
                 <div class="card appDev">
                     <img class="card-img-top" src="images/app.jpeg" alt="App Development">
                     <div class="card-body">
@@ -154,94 +154,131 @@
                 </div>
             </li>
         </ul>
-        
-        </div>
-        <button type="button" class="btn btn-primary hiringBtn" data-toggle="modal" data-target="#hiringModal">
 
-            </button>
-            <!-- Hiring Modal -->
-            <div class="modal fade" id="hiringModal" tabindex="-1" role="dialog" aria-labelledby="hiringModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">We are Hiring</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="hireContainer">
-                                <p>Location: Bangalore</p>
-                                <p>Process: Inbound</p>
-                                <p>Shift: Rotational</p>
-                                <p>Working Days: 6 Days</p>
-                                <p>Fixed Salary + Incentives</p>
-                                <p>Graduation: Fresher/Graduate/Undergraduate</p>
-                                <p>Cab Facility Available</p>
-                                <h5>Candidate Profile</h5>
-                                <p>0-2yrs Exp</p>
-                                <p>Good communication skills, both oral and written</p>
-                                <p>Should have good attitude - should be committed to the work</p>
-    
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button onclick="sendMail()" type="button" class="btn btn-dark">Apply Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        <!-- Web Modal -->
     </div>
+    <button type="button" class="btn btn-primary hiringBtn" data-toggle="modal" data-target="#hiringModal">
 
-    <div class="modal fade" id="webModal" tabindex="-1" role="dialog" aria-labelledby="webModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">WEB DESIGN & Development</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                                <p class="marginT15">
-                                        <b class="FclrS">We create websites developed with the latest technologies.
-                                            If you're looking for a beautiful, intuitive and functional website, then don't hesitate to
-                                            <a href="mailto:Contact@cygnisys.com">get in touch.</a>
-                                       </b>
-                                       <p>
-                                           <b class="FclrS">Our measures of operation is to take the right requirements and give the right Solutions.
-                                               First we start of with the client in getting the requirements because no one understands your Business better than you do.
-                                               First the gathering of the requirements then starts the Fun part.
-                                           </b>
-                                       </p>
-                                       <p>
-                                           <b class="FclrS">Our Team work hand in hand to deliver the right product to clients.
-                                               First we start off with the Designing Part. Our Experts in the house gets you the world class Designs.
-                                               Once the Designs are clear with Cients then comes the "Lion".
-                                           </b>
-                                       </p>
-                                       <p>
-                                           <b class="FclrS">Once the Designs are done Our developers in the house starts off
-                                                with the optimized way to keep the process short and Deliver you the  product in short-time.
-                                                Mean while you can peep in while the Development is going on so that you can get the progress.
-                                                We develop sites that not only fits your desktop, it also fits all the devices accross.
-                                           </b>
-                                       </p>
-                                       <p>
-                                           <b class="FclrS">Once the product is ready. Please hold on we are not going to give you untill the Testing team certifies it.
-                                               A rigorous testing of all the modules and functionality is done then the product is ready to rock your Business.
-                                           </b>
-                                       </p>
-                            <div class="modal-footer">
-                                    
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button onclick="" type="button" class="btn btn-dark">More Info</button>
-                            </div>
-                        </div>
+    </button>
+    <!-- Hiring Modal -->
+    <div class="modal fade" id="hiringModal" tabindex="-1" role="dialog" aria-labelledby="hiringModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">We are Hiring</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="hireContainer">
+                        <p>Location: Bangalore</p>
+                        <p>Process: Inbound</p>
+                        <p>Shift: Rotational</p>
+                        <p>Working Days: 6 Days</p>
+                        <p>Fixed Salary + Incentives</p>
+                        <p>Graduation: Fresher/Graduate/Undergraduate</p>
+                        <p>Cab Facility Available</p>
+                        <h5 class="modal-title borderBtm marginTop1rem" id="exampleModalLabel">Candidate Profile</h5>
+                        <p class="marginTop1rem">0-2yrs Exp</p>
+                        <p>Good communication skills, both oral and written</p>
+                        <p>Should have good attitude - should be committed to the work</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button onclick="sendMail()" type="button" class="btn btn-dark">Apply Now</button>
                     </div>
                 </div>
             </div>
+        </div>
+
+    </div>
+    <!-- Web Modal -->
+    <div class="modal fade" id="webModal" tabindex="-1" role="dialog" aria-labelledby="webModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">WEB DESIGN & Development</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="marginT15">
+                        We create websites developed with the latest technologies. If you're looking for a beautiful, intuitive and functional website,
+                        then don't hesitate to
+                        <a href="mailto:Contact@cygnisys.com">get in touch.</a>
+                    </p>
+                    <p>
+                        Our measures of operation is to take the right requirements and give the right Solutions. First we start of with the client
+                        in getting the requirements because no one understands your Business better than you do. First the
+                        gathering of the requirements then starts the Fun part.
+
+                    </p>
+                    <p>
+                        Our Team work hand in hand to deliver the right product to clients. First we start off with the Designing Part. Our Experts
+                        in the house gets you the world class Designs. Once the Designs are clear with Cients then comes
+                        the "Lion".
+
+                    </p>
+                    <p>
+                        Once the Designs are done Our developers in the house starts off with the optimized way to keep the process short and Deliver
+                        you the product in short-time. Mean while you can peep in while the Development is going on so that
+                        you can get the progress. We develop sites that not only fits your desktop, it also fits all the
+                        devices accross.
+
+                    </p>
+                    <p>
+                        Once the product is ready. Please hold on we are not going to give you untill the Testing team certifies it. A rigorous testing
+                        of all the modules and functionality is done then the product is ready to rock your Business.
+
+                    </p>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button onclick="" type="button" class="btn btn-dark">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- App Modal -->
+    <div class="modal fade" id="appModal" tabindex="-1" role="dialog" aria-labelledby="appModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">App Design & Development</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="marginT15">
+                        As the Smartphones are getting popular everyone need their needs at the finger tips.
+                     So here we are to give you that App which will fit in your pocket for your Business needs.
+                        <a href="mailto:Contact@cygnisys.com">get in touch.</a>
+                    </p>
+                    <p>
+                        Making Apps the way you want is our Style. Yes we develop Apps accross all popular platforms on Android, Windows and IOS.
+
+                    </p>
+                    <p>
+                        Outdated Apps? We also provide Services and support for your out-dated Apps.
+                        We give you the Best in Class Desings and product. We develop apps that not only fits your phone, it also fits all the devices accross.
+
+                    </p>
+                    <p>
+                        Have an Idea of App? Then you are at the right place to get your App the way you and your customers need it.
+
+                    </p>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button onclick="" type="button" class="btn btn-dark">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/imagesloaded.js"></script>
     <script src="js/classie.js"></script>
